@@ -7,6 +7,7 @@ public CuentaBancaria(String titular, double saldoInicial) {
     this.saldo = saldoInicial;
 }
 
+//Depositar dinero
 public void depositar(double cantidad){
     if(cantidad>0){
         saldo=saldo+cantidad;
@@ -16,6 +17,7 @@ public void depositar(double cantidad){
     }
 }
 
+//Retirar dinero
 public double retirar(double cantidad){
     if (cantidad>0 && saldo >= cantidad) {
         saldo=saldo-cantidad;
@@ -26,6 +28,12 @@ public double retirar(double cantidad){
         return saldo;
         
     }
+}
+
+//Mostrar información
+public void mostrarInformacion(){
+    System.out.println("Titular: "+ titular);
+    System.out.println("Saldo: "+ saldo);
 }
 
 public double getSaldo(){

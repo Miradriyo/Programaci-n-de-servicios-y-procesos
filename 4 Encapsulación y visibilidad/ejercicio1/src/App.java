@@ -25,17 +25,16 @@ public class App {
                 String nombre=titular.nextLine();
                 double saldo=0; //el sldo inicial es 0 porque acabamos de crear la cuenta
                 CuentaBancaria cuenta=new CuentaBancaria(nombre, saldo);
-                cuentasBancarias.add(cuenta) //agregamos la cuenta creada
+                cuentasBancarias.add(cuenta); //agregamos la cuenta creada
                 System.out.println("Cuenta bancaria creada a nombre de: "+ nombre);
                 titular.close();
                 break;
             case 2: //pedir al usuario que elija cual quiere usar, pedirle cantidad a depositar y realizar el depósito
                 System.out.println("Introduzca el nombre de la cuenta");
-                Scanner titular= new Scanner(SysteScannerm.in);
+                Scanner titularDeposito= new Scanner(System.in);
                 String nombreTitular=titular.nextLine();
-                for (CuentaBancaria cuenta:cuentasBancarias){ //Recorremos la lista de cuentas
-                    if()
-                }
+                
+                
                 double deposito.depositar();
             default:
                 break;

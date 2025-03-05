@@ -1,27 +1,27 @@
-public class vehiculos {
+public class Vehiculos {
     private String marca;
     private String modelo;
     private int kilometraje;
 
-    public vehiculos(string marca, string modelo, int kilometraje) {
+    public Vehiculos(String marca, String modelo, int kilometraje) {
         this.marca = marca;
         this.modelo = modelo;
         this.kilometraje = kilometraje;
     }
 
-    public string getMarca() {
+    public String getMarca() {
         return marca;
     }
 
-    public void setMarca(string marca) {
+    public void setMarca(String marca) {
         this.marca = marca;
     }
 
-    public string getModelo() {
+    public String getModelo() {
         return modelo;
     }
 
-    public void setModelo(string modelo) {
+    public void setModelo(String modelo) {
         this.modelo = modelo;
     }
 
@@ -32,5 +32,4 @@ public class vehiculos {
     public void setKilometraje(int kilometraje) {
         this.kilometraje = kilometraje;
     }
-
 }

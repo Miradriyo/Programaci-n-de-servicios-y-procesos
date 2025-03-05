@@ -6,6 +6,10 @@ package ejercicio1;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Coche coche1=new Coche("Seat","Leon",10000,5);
+        System.out.println("Marca: "+coche1.getMarca());
+        System.out.println("Modelo: "+coche1.getModelo());
+        System.out.println("Kilometraje: "+coche1.getKilometraje());
+        
     }
 }

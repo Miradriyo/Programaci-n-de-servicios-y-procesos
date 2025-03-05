@@ -1,7 +1,7 @@
-public class coche extends vehiculos {
+public class Coche extends Vehiculos {
     private int numeroDePuertas;
 
-    public coche(String marca, String modelo, int kilometraje, int numeroDePuertas) {
+    public Coche(String marca, String modelo, int kilometraje, int numeroDePuertas) {
         super(marca, modelo, kilometraje);
         this.numeroDePuertas = numeroDePuertas;
     }

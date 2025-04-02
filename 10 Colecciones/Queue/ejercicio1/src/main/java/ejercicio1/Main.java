@@ -14,9 +14,12 @@ public class Main {
         tareasPendientes.add("Estudiar");
         tareasPendientes.add("Hacer ejercicio");
         System.out.println("Lista de tareas pendientes: " + tareasPendientes);
-        for (int i = 0; i < tareasPendientes.length; i++) {
-            
-        }
-        
-    }
-}
+        int totalTareas = tareasPendientes.size();
+        for (int i = 0; i < totalTareas; i++) {
+            String tarea= tareasPendientes.poll();
+            System.out.println("Tarea procesada: " + tarea);
+            System.out.println("Lista de tareas pendientes: " + tareasPendientes);
+            if (tareasPendientes.isEmpty()) {
+                System.out.println("No hay más tareas pendientes.");
+            }        
+        }}}
